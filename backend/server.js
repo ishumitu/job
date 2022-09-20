@@ -18,7 +18,7 @@ app.use(express.urlencoded({extended: false}))
 
 
 app.use('/api/jobs', require('./routes/jobRoutes'))    
-
+app.use('/api/users', require('./routes/userRoutes')) 
 
 
 app.use(errorHandler) 
